@@ -11,6 +11,51 @@ html {
   // height: 100%;
 }
 
+.navbar {
+  background-color: rgba(255, 255, 255, 0);
+
+}
+
+section {
+  height: 80vh;
+  margin: 15px 25px;
+  padding: 10px;
+}
+
+section.one {
+  background-color: rgb(192, 127, 127);
+}
+
+section.two {
+  // background-color: rgb(112, 78, 102);
+  display: flex;
+  flex-direction: column;
+
+}
+section.two
+.tile.is-ancestor {
+  height: 40vh;
+  margin: 5px 5px 0px;
+}
+
+section.two
+.tile.is-parent {
+  height: 35vh;
+  width: 50vh;
+
+}
+
+section.three {
+  background-color: rgb(143, 85, 107);
+  display: flex;
+
+}
+
+section.four {
+  background-color: rgb(134, 96, 168);
+}
+
+
 .tile.is-parent {
   background-color: white;
   border-radius: 10px;
@@ -47,5 +92,35 @@ html {
   font-size: 60px;
   text-align: left;
   margin-left: 30vh;
+
+}
+
+.tile.is-parent.potions {
+  background-image: url("../assets/Potions.gif");
+  background-position: center;
+  background-size: cover;
+}
+
+.tile.is-parent.doodler {
+  background-image: url("../assets/Doodler.gif");
+  background-position: center;
+  background-size: cover;
+}
+
+.tile.is-parent.quiz {
+  background-image: url("../assets/quizavision.gif");
+  background-position: center;
+  background-size: cover;
+}
+
+.tile.is-parent.frogger {
+  background-image: url("../assets/Frogger.gif");
+  background-position: center;
+  background-size: cover;
+}
+
+svg {
+  height: 15vh;
+  margin: 8px;
 
 }

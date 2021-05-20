@@ -1,4 +1,4 @@
-# TITLE!
+# aidabourdis.com 
 
 ![video/image](url)
 
@@ -28,6 +28,10 @@ Click [here](url) to try the App!
 ## Timeframe:
 
 ## Technologies Used:
+
+title box animation: https://codepen.io/jamesmellers/pen/XKmyoo
+
+project card animations: https://github.com/ciar4n/Izmir
 
 ## Process
 ### Planning

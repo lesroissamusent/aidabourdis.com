@@ -1,15 +1,28 @@
 @import "~bulma/bulma.sass";
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
-
-// div {
-//   border-style: solid;
-//   border-width: 1px;
-// }
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Baloo+2&family=Bellota:ital,wght@0,700;1,400&display=swap');
+@import "./izmir.css";
 
 html {
   background-color: #A38891;
-  // height: 100%;
 }
+
+h1 {
+  font-family: 'Bellota', cursive;
+  font-size: 8vh;
+}
+
+h2 {
+  font-family: 'Bellota', cursive;
+  font-size: 6vh;
+}
+
+p {
+  font-family: 'Baloo 2', cursive;
+  font-size: 3vh;
+  color: white;
+
+}
+
 
 .navbar {
   background-color: rgba(255, 255, 255, 0);
@@ -17,13 +30,18 @@ html {
 }
 
 section {
-  height: 80vh;
+  height: fit-content;
+  min-height: 80vh;
   margin: 15px 25px;
   padding: 10px;
 }
 
 section.one {
   background-color: rgb(192, 127, 127);
+  transform: skewY(-5deg);
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
 }
 
 section.two {
@@ -32,6 +50,14 @@ section.two {
   flex-direction: column;
 
 }
+
+div.sectionone {
+  transform: skewY(5deg);
+  display: flex;
+  align-items: center;
+}
+
+
 section.two
 .tile.is-ancestor {
   height: 40vh;
@@ -40,8 +66,8 @@ section.two
 
 section.two
 .tile.is-parent {
-  height: 35vh;
-  width: 50vh;
+  // margin: 5vh;
+  padding: 0px;
 
 }
 
@@ -52,23 +78,30 @@ section.three {
 }
 
 section.four {
-  background-color: rgb(134, 96, 168);
-}
+    border-radius: 50%;
+    border-width: medium;
+    border-style: solid;
+    width: 80vh;
+    height: 50vh;
+    background-color: slategray;
+    display: inline-block;
+    text-align: center;
+  }
 
 
 .tile.is-parent {
-  background-color: white;
+  // background-color: white;
   border-radius: 10px;
   margin: 2px;
   display: block;
   // flex: wrap;
 }
 
-.aida {
-  font-family: 'Amatic SC', cursive;
-  text-align: center;
-  height: 80vh;
-}
+// h1.name {
+//   font-family: 'Amatic SC', cursive;
+//   text-align: center;
+//   font-size: 20vh;
+// }
 
 .tile.is-parent.intro {
   // font-size: 60px;
@@ -77,50 +110,168 @@ section.four {
   // width: 80vh;
 }
 
+.tile.headshot{
+  justify-content: center;
+  max-width: fit-content;
+  margin: 10vh;
+}
+
 .tile.intro {
   display: block;
   // background-color: green;
   margin: 2px;
   padding: 5px;
 }
-.name {
-  font-size: 230px;
+// .name {
+//   font-size: 230px;
 
-}
+// }
 
-.name.subtitle {
-  font-size: 60px;
+h2.name.subtitle {
   text-align: left;
   margin-left: 30vh;
 
 }
 
+.tile.is-ancestor.projects.one {
+  margin-bottom: 10vh;
+}
+
 .tile.is-parent.potions {
-  background-image: url("../assets/Potions.gif");
-  background-position: center;
-  background-size: cover;
+  padding: 0px;
 }
 
 .tile.is-parent.doodler {
-  background-image: url("../assets/Doodler.gif");
-  background-position: center;
-  background-size: cover;
+  padding: 0px;
+
 }
 
 .tile.is-parent.quiz {
-  background-image: url("../assets/quizavision.gif");
-  background-position: center;
-  background-size: cover;
+  padding: 0px;
+
 }
 
 .tile.is-parent.frogger {
-  background-image: url("../assets/Frogger.gif");
-  background-position: center;
-  background-size: cover;
+  padding: 0px;
+
+}
+
+figcaption {
+  padding: 0px;
+
 }
 
 svg {
-  height: 15vh;
-  margin: 8px;
+  height: 12vh;
+  width: 12vh;
+  margin: 1.5vh;
+  /* background-color: white; */
+  /* padding: 1vh; */
+  border-bottom: solid;
+  border-width: thin;
+  border-color: aliceblue;
+  border-radius: 20%;
 
+}
+
+svg.aida {
+  border: none;
+  // z-index: 500;
+  // position: absolute;
+  // left: 50px;
+  // top: 50px;
+}
+
+svg.interest {
+  float: left;
+  margin-right: 1vh;
+  border: none;
+}
+
+svg.interest-right {
+  float: right;
+  margin-left: 1vh;
+  border: none;
+
+}
+
+img.headshot {
+  height: 40vh;
+    border-radius: 20%;
+    margin-top: 40%;
+    border-style: solid;
+    border-width: 0px 5px 5px 0px;
+    border-color: #e8e8e847;
+
+    // z-index: 500;
+    // position: absolute;
+    // left: 50px;
+    // top: 50px;
+
+}
+
+
+.c4-izmir {
+  --primary-color: purple;
+  --transition-duration: 500ms;
+  --overlay-opacity: .7;
+}
+
+.tile.is-parent.interests {
+  border-radius: 50%;
+}
+
+
+// NAME
+
+@keyframes tipsy {
+  0% {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
+body {
+  font-family:  'Bellota', cursive;
+  background-color: #2e2e31;
+}
+
+h1.name {
+  color: #fffbf1;
+  text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+  font-size: 13vh;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: -3px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+h1.name:before,
+h1.name:after {
+  content: '';
+  padding: .9em .4em;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  top: 50%;
+  display: block;
+  border: 15px solid red;
+  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  animation: 10s infinite alternate ease-in-out tipsy;
+}
+
+h1.name:before {
+  border-color: #89819b #ae6b6b rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+
+h1.name:after {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0)  #ae6b6b #a73d37;
+  box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
 }

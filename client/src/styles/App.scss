@@ -55,11 +55,18 @@ hr {
 
 .navbar {
   background-color: rgba(0, 0, 0, 0);
+  max-height: 10vh;
+
 }
 
+div.navbar-menu{
+  justify-content: center;
+}
+
+
 .navbar-item {
-  margin-left: 3%;
-  color: white;
+  margin-left: 2%;
+  color: $orange ;
   font-size: 2.5vh;
 }
 
@@ -68,13 +75,14 @@ a.navbar-item:visited {
 }
 
 a.navbar-item:hover {
-  color: $orange ;
+  color: $pink;
+  background-color: rgba(0, 0, 0, 0);
+
 }
 
 a.navbar-item:active {
   color: $lilac;
 }
-
 
 
 // SECTION AIDA //
@@ -112,6 +120,8 @@ h1.name {
   top: 47%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  flex-direction: column;
 }
 
 h1.name:before,
@@ -141,8 +151,8 @@ h1.name:after {
 .tile.intro {
   background-color: transparent;
   display: block;
-  margin: 2px;
-  padding: 5px;
+  margin: 0vh 10vh 1vh 0vh;
+  padding: 2vh;
 }
 
 .tile.headshot{
@@ -188,6 +198,10 @@ img.headshot {
 
 
 // SECTION EXPERIENCE //
+
+section.experience.tile.is-ancestor {
+  margin-top: 13vh;
+}
 
 section.experience
 h1 {
@@ -296,16 +310,11 @@ figure {
 .c4-izmir 
 figcaption {
   margin-top: 1vh;
-    // overflow: overlay;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: flex-start;
+
 }
 
 .c4-reveal-down {
   overflow: overlay;
-
-
 }
 
 .c4-izmir {
@@ -313,25 +322,21 @@ figcaption {
   --transition-duration: 500ms;
   --image-opacity: 0.2;
   --text-color: white;
-  // --overflow: overlay;
 }
 
 .projects
 h2 {
   font-size: 4vh;
-
 }
 
 .projects
 h3 {
   font-size: 2.1vh;
-
 }
 
 .projects
 p {
   font-size: 2vh;
-
 }
 
 
@@ -348,6 +353,11 @@ h1 {
   text-align: center;
   margin-top: 10vh;
   color: $orange;
+}
+
+section.three
+div {
+  text-align: center;
 }
 
 div.tile.is-parent.tech {
@@ -403,11 +413,15 @@ h1 {
 }
 
 .tile.is-parent.contact {
-  margin: 0vh 6vh 10vh !important;
+  margin: 0vh 15vh 10vh !important;
   padding: 5vh !important;
-  // background-color: #89809b54;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
+}
+section.five
+div {
+margin: 0 1.5vh;
 }
 
 .tile.contact-link {
@@ -415,8 +429,17 @@ h1 {
   justify-content: space-between;
   padding: 0 10vh;
 }
-
 .tile.contact-link
 img:hover {
-  transform: rotateZ(5deg);
+  transform: rotateZ(7deg);
+}
+
+section.five
+img {
+  width: 7vh;
+}
+
+section.five
+p {
+  font-size: 2vh;
 }

@@ -13,6 +13,7 @@ import mail from './assets/mail.svg'
 
 
 function App() {
+
   
 
   return (
@@ -106,77 +107,64 @@ function App() {
                   </h2>
                 </div>   
                 <div className="c4-reveal-down c4-delay-200">  
-                  <h3>
-                    For budding potion masters.
-                  </h3>
+                  <h3>For budding potion masters.</h3>
+                  <p>A 10 day, solo project which required a full-stack application with a Python Django back-end and a React front-end, multiple relationships and CRUD functionality.</p>
+                  <a href="https://www.github.com/lesroissamusent" target="_blank">Potions Cupboard |</a>
+                  <a href="https://github.com/lesroissamusent/Potions-Lab" target="_blank"> | GitHub</a>
                 </div>  
               </figcaption>
             </figure>
-            <div class="modal">
-              <div class="modal-background"></div>
-              <div class="modal-card">
-                <header class="modal-card-head">
-                  <p class="modal-card-title">Modal title</p>
-                  {/* <button class="delete" aria-label="close"></button> */}
-                </header>
-                <section class="modal-card-body">
-                  <p>Stuff</p>
-                </section>
-                <footer class="modal-card-foot">
-                  <button class="modal-close is-large" aria-label="close" id="btn"></button>
-                </footer>
-              </div>
-            </div>
           </div>
           <div className="tile is-parent doodler">
-              <figure className="c4-izmir c4-border-bottom-left c4-image-zoom-in">
-                <img src={doodler} alt="Doodler"/>
-                <figcaption>
-                  <div className="c4-fade-up">
-                    <h2>
-                      Doodler
-                    </h2>
-                  </div>   
-                  <div className="c4-reveal-down c4-delay-200">  
-                    <h3>
-                      For social doodlers.
-                    </h3>
-                  </div>  
-                </figcaption>
-              </figure>
+            <figure className="c4-izmir c4-border-bottom-left c4-image-zoom-in">
+              <img src={doodler} alt="Doodler"/>
+              <figcaption>
+                <div className="c4-fade-up">
+                  <h2>Doodler</h2>
+                </div>   
+                <div className="c4-reveal-down c4-delay-200">  
+                  <h3>
+                    For social doodlers.
+                  </h3>
+                  <p>A one week, group project which required a full-stack application with both internal and external APIs.</p>
+                  <a href="https://doodler.netlify.app/" target="_blank">Doodler |</a>
+                  <a href="https://github.com/lesroissamusent/Doodler" target="_blank"> | GitHub</a>
+                </div>  
+              </figcaption>
+            </figure>
           </div> 
-        {/* </div>
-        <div className="tile is-ancestor projects two"> */}
           <div className="tile is-parent quiz">
-              <figure className="c4-izmir c4-border-bottom-left c4-image-zoom-in">
-                <img src={quizavision} alt="Doodler"/>
-                <figcaption>
-                  <div className="c4-fade-up">
-                    <h2>
-                      Quizavision
-                    </h2>
-                  </div>   
-                  <div className="c4-reveal-down c4-delay-200">  
-                    <h3>
-                      For film and tv enthusiasts.
-                    </h3>
-                  </div>  
-                </figcaption>
-              </figure>
+            <figure className="c4-izmir c4-border-bottom-left c4-image-zoom-in">
+              <img src={quizavision} alt="Doodler"/>
+              <figcaption>
+                <div className="c4-fade-up">
+                  <h2>Quizavision</h2>
+                </div>   
+                <div className="c4-reveal-down c4-delay-200">  
+                  <h3>
+                    For film and tv enthusiasts.
+                  </h3>
+                  <p>A two day, pair programming challenge which moved us from vanilla JavaScript to React.js and required the use of an external API.</p>
+                  <a href="https://quizavision.netlify.app/" target="_blank">Quizavision |</a>
+                  <a href="https://github.com/lesroissamusent/Quizavision" target="_blank"> | GitHub</a>
+                </div>  
+              </figcaption>
+            </figure>
           </div>
           <div className="tile is-parent frogger">
             <figure className="c4-izmir c4-border-bottom-left c4-image-zoom-in">
               <img src={frogger} alt="Doodler"/>
               <figcaption>
                 <div className="c4-fade-up">
-                  <h2>
-                    Frogger:2020
-                  </h2>
+                  <h2>Frogger:2020</h2>
                 </div>   
                 <div className="c4-reveal-down c4-delay-200">  
                   <h3>
                     For frog lovers and covid haters.
                   </h3>
+                  <p>A one week, solo project which required us to build a grid-based JavaScript game, and bring it to life with CSS.</p>
+                  <a href="https://lesroissamusent.github.io/Frogger-2020/" target="_blank">Frogger:2020 |</a>
+                  <a href="https://github.com/lesroissamusent/Frogger-2020" target="_blank"> | GitHub</a>
                 </div>  
               </figcaption>
             </figure>
@@ -536,18 +524,18 @@ function App() {
           {/* <img src="avatar-logo.svg" alt="navbar-logo" width="112" height="28" /> */}
           <div className="tile contact-link">
             <div>
-              <img src={mail} aria-label="github-link" width="70"/>
+              <img src={mail} aria-label="email" width="70"/>
               <p>aida.lucie@gmail.com</p>
             </div>
             <div>
-              <a href="#aida">
+              <a href="https://www.github.com/lesroissamusent" target="_blank">
                 <img src={github} aria-label="github-link" width="70"/>
               </a>
               <p>github.com/lesroissamusent</p>
             </div>
             <div>
-              <a href="#aida">
-                <img src={linkedin} aria-label="github-link" width="70"/>
+              <a href="https://www.linkedin.com/in/aida-bourdis" target="_blank">
+                <img src={linkedin} aria-label="linkedin-link" width="70"/>
               </a>
               <p>linkedin.com/in/aida-bourdis</p>
             </div>

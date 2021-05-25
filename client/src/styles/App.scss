@@ -31,6 +31,10 @@ p {
   color: white;
 }
 
+a {
+  color: white;
+}
+
 .tile.is-parent {
   border-radius: 10px;
   margin: 2px;
@@ -289,16 +293,47 @@ figure {
   min-width: 45%;
 }
 
+.c4-izmir 
 figcaption {
-  padding: 0px;
+  margin-top: 1vh;
+    // overflow: overlay;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-start;
+}
+
+.c4-reveal-down {
+  overflow: overlay;
+
+
 }
 
 .c4-izmir {
   --primary-color: #ae6b6b;
   --transition-duration: 500ms;
-  --overlay-opacity: .5;
+  --image-opacity: 0.2;
   --text-color: white;
+  // --overflow: overlay;
 }
+
+.projects
+h2 {
+  font-size: 4vh;
+
+}
+
+.projects
+h3 {
+  font-size: 2.1vh;
+
+}
+
+.projects
+p {
+  font-size: 2vh;
+
+}
+
 
 
 
